@@ -20,7 +20,6 @@ aiRouter.get("/test", (_, res) => __awaiter(void 0, void 0, void 0, function* ()
 }));
 aiRouter.post("/message", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { prompt } = req.body;
-    console.log(req.body);
     if (!prompt) {
         res.send("ERROR");
         return;
